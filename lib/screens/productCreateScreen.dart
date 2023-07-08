@@ -49,6 +49,7 @@ class _ProductCreateScreenState extends State<ProductCreateScreen> {
                     onChanged: (value) {},
                     decoration: appInputDecoration('Product Total Price'),
                   ),
+                  const SizedBox(height: 20),
                   AppDropDownStyle(
                     DropdownButton(
                         value: "",
@@ -63,6 +64,13 @@ class _ProductCreateScreenState extends State<ProductCreateScreen> {
                         isExpanded: true,
                         underline: Container(),
                         onChanged: (value) {}),
+                  ),
+                  const SizedBox(height: 20),
+                  Container(
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('Submit'),
+                    ),
                   ),
                 ],
               ),

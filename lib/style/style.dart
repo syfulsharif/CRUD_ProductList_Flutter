@@ -39,7 +39,7 @@ DecoratedBox AppDropDownStyle(child) {
       borderRadius: BorderRadius.circular(4),
     ),
     child: Padding(
-      padding: EdgeInsets.only(left: 14, right: 25),
+      padding: const EdgeInsets.only(left: 14, right: 25),
       child: child,
     ),
   );
