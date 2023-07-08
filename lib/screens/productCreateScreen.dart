@@ -1,6 +1,5 @@
 import 'package:crud/style/style.dart';
 import 'package:flutter/material.dart';
-import 'package:crud/style/style.dart';
 
 class ProductCreateScreen extends StatefulWidget {
   const ProductCreateScreen({super.key});
@@ -53,7 +52,7 @@ class _ProductCreateScreenState extends State<ProductCreateScreen> {
                   AppDropDownStyle(
                     DropdownButton(
                         value: "",
-                        items: [
+                        items: const [
                           DropdownMenuItem(
                               child: Text('Select QTY'), value: ""),
                           DropdownMenuItem(child: Text('1 Pc'), value: '1 Pc'),
@@ -68,8 +67,9 @@ class _ProductCreateScreenState extends State<ProductCreateScreen> {
                   const SizedBox(height: 20),
                   Container(
                     child: ElevatedButton(
+                      style: appButtonStyle(),
                       onPressed: () {},
-                      child: const Text('Submit'),
+                      child: submitButtonChild('Submit'),
                     ),
                   ),
                 ],
