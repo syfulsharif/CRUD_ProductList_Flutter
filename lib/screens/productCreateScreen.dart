@@ -76,8 +76,8 @@ class _ProductCreateScreenState extends State<ProductCreateScreen> {
                   const SizedBox(height: 20),
                   AppDropDownStyle(
                     DropdownButton(
-                        value: "",
-                        items: const [
+                        value: formValues['Qty'],
+                        items:  [
                           DropdownMenuItem(
                               child: Text('Select QTY'), value: ""),
                           DropdownMenuItem(child: Text('1 Pc'), value: '1 Pc'),
